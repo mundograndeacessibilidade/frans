@@ -326,43 +326,24 @@
 
 <script>
 const playlist = [
-  { title: "Faixa 1", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_aca73cb166d34d6a8381dcd9e86f6e97~mv2.png", test: true },
-  { title: "Faixa 2", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3d6634586c4f4909b760938d64ed2e88~mv2.jpg", test: true },
-  { title: "Faixa 3", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_849d7e71650347738dccc5644aa10e57~mv2.png", test: true },
-  { title: "Faixa 4", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_419e14ccc94e4e239eaa59a4b413c03d~mv2.jpg", test: true },
-  { title: "Faixa 5", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_172e51816c6f4c9da92117b66ed66457~mv2.png", test: true },
-  { title: "Faixa 6", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_0cd110b61f2e426fa7d899fd598444f8~mv2.jpg", test: true },
-  { title: "Faixa 7", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_6888b0fc76794907a5933672af9cdd0e~mv2.png", test: true },
-  { title: "Faixa 8", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_b2f4454831ed440097c11be0f62235d9~mv2.jpg", test: true },
-  { title: "Faixa 9", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_dc31b77efe57499d91172b27ddc16fd5~mv2.png", test: true },
-  { title: "Faixa 10", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3eb6f531f9fe49e6bf90d2bbdccb4566~mv2.jpg", test: true },
-  { title: "Faixa 11", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_f91af4667da84ef09c06407ba83a3d58~mv2.png", test: true },
-  { title: "Faixa 12", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_91a6d01539e64c8ba4c320f719c95f51~mv2.jpg", test: true },
-  { title: "Faixa 13", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_7128ec17ea46471dbbd06582b8c828a2~mv2.png", test: true },
-  { title: "Faixa 14", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_27969a9ff41e4c029cda8bb0899b81d5~mv2.jpg", test: true },
-  { title: "Faixa 15", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_408bcc5ae04941e994d7bdeca1c3fa71~mv2.png", test: true },
-  { title: "Faixa 16", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_e5c8b0c2912c4ff6954fd0a5f5df6a85~mv2.jpg", test: true },
-  { title: "Faixa 17", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_36c2e0d6e8334472a20050225f8a94d4~mv2.jpg", test: true },
-  { title: "Faixa 18", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_aca73cb166d34d6a8381dcd9e86f6e97~mv2.png", test: true },
-  { title: "Faixa 19", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3d6634586c4f4909b760938d64ed2e88~mv2.jpg", test: true },
-  { title: "Faixa 20", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_849d7e71650347738dccc5644aa10e57~mv2.png", test: true },
-  { title: "Faixa 21", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_419e14ccc94e4e239eaa59a4b413c03d~mv2.jpg", test: true },
-  { title: "Faixa 22", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_172e51816c6f4c9da92117b66ed66457~mv2.png", test: true },
-  { title: "Faixa 23", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_0cd110b61f2e426fa7d899fd598444f8~mv2.jpg", test: true },
-  { title: "Faixa 24", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_6888b0fc76794907a5933672af9cdd0e~mv2.png", test: true },
-  { title: "Faixa 25", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_b2f4454831ed440097c11be0f62235d9~mv2.jpg", test: true },
-  { title: "Faixa 26", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_dc31b77efe57499d91172b27ddc16fd5~mv2.png", test: true },
-  { title: "Faixa 27", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3eb6f531f9fe49e6bf90d2bbdccb4566~mv2.jpg", test: true },
-  { title: "Faixa 28", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_f91af4667da84ef09c06407ba83a3d58~mv2.png", test: true },
-  { title: "Faixa 29", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_91a6d01539e64c8ba4c320f719c95f51~mv2.jpg", test: true },
-  { title: "Faixa 30", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_7128ec17ea46471dbbd06582b8c828a2~mv2.png", test: true },
-  { title: "Faixa 31", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_27969a9ff41e4c029cda8bb0899b81d5~mv2.jpg", test: true },
-  { title: "Faixa 32", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_408bcc5ae04941e994d7bdeca1c3fa71~mv2.png", test: true },
-  { title: "Faixa 33", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_e5c8b0c2912c4ff6954fd0a5f5df6a85~mv2.jpg", test: true },
-  { title: "Faixa 34", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_b5ff9d872c574ce5ba2fd26b70e8b2f5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_36c2e0d6e8334472a20050225f8a94d4~mv2.jpg", test: true },
-  { title: "Faixa 35", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_98299c9b0b86487a96be91746f016689.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_aca73cb166d34d6a8381dcd9e86f6e97~mv2.png", test: true },
-  { title: "Faixa 36", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_83b0ac4718004619b9b4801c21f2788a.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3d6634586c4f4909b760938d64ed2e88~mv2.jpg", test: true },
-  { title: "Faixa 37", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_21a9f37956854125b82d9ee022319cf0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_849d7e71650347738dccc5644aa10e57~mv2.png", test: true }
+  { title: "Faixa 1", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_141a92a4a4de4d21aad014c04e14c9c2.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_e0ca7740d20943b19e92608c754b5957~mv2.png" },
+  { title: "Faixa 2", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_06045bafaaa74dbf959788ddd8911376.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_127770ca43434143a5bcef301b2bfb42~mv2.png" },
+  { title: "Faixa 3", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_a3fddb9130ee45f091526d3f9e7364d4.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_a662a10601334334ab726b5817549529~mv2.png" },
+  { title: "Faixa 4", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_16fbba365bd64e0a83299274b2322da8.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_390dce8d23664ad282a8360c5a39e632~mv2.png" },
+  { title: "Faixa 5", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_32be3b500c53472c92494e76edc65a0e.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_296f8076a1d942aa9302e5e6cad8593c~mv2.png" },
+  { title: "Faixa 6", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_da392bdc24004f419216c859ba4d5918.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_e1fde8abdc194a06b7dd335d6b9b8d1e~mv2.png" },
+  { title: "Faixa 7", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_0d9be3ab132a4049a09f8679b431e1d4.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_4c7cffc453034bc881864333e2525f84~mv2.png" },
+  { title: "Faixa 8", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_419b83add5d048adaeaf719898125947.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_34d61eb72fce48b18a622a49d5cc6bbe~mv2.png" },
+  { title: "Faixa 9", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_d8dd8d6382084435b82b59c43495edc5.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_7a0b5d36db944e8688ff51cd169a1c37~mv2.png" },
+  { title: "Faixa 10", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_af30943dedb94b7c8456be3068b09ab0.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_b35c735e04314634b7c879c35791c95b~mv2.png" },
+  { title: "Faixa 11", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_7e7985a738aa48de90bc4ef0fe5ef6dc.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_201f07ca4e4a44879f249f23d95d65b5~mv2.png" },
+  { title: "Faixa 12", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_5a856da4d76f4be7a19736a60a0da893.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_6d56256a90c64298b692a48b54163691~mv2.png" },
+  { title: "Faixa 13", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_c1b7a4bdb9de41aea32e86603ef2f2c4.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3cb370669db94ad986845664d13f8f24~mv2.png" },
+  { title: "Faixa 14", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_e543dfa0ffca4dd9befab39d2b24e88e.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_91c6f4a02b50457888cbccfe5eccb9ae~mv2.png" },
+  { title: "Faixa 15", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_1cd9c421a9d546b9a8df1e91997ee534.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_3632f11df16146f4af6d9cea8aff64b8~mv2.png" },
+  { title: "Faixa 16", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_5f03d299b0c1408886f1d062781b4608.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_441ffc41c03e4d75a23580058748d4ab~mv2.png" },
+  { title: "Faixa 17", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_e72fd020b5784d40b83e22af4ba4a6ce.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_617e6912950c49b59e7e38d4100ae8a7~mv2.png" },
+  { title: "Faixa 18", audioUrl: "https://static.wixstatic.com/mp3/3fe01e_4e38166044374a4fb138a510f3adbaaa.mp3", coverUrl: "https://static.wixstatic.com/media/3fe01e_c24a551ad37e4aa28867ae16f722e122~mv2.png" }
 ];
 
 /* Ao terminar uma faixa, passa sozinho para a próxima?
@@ -533,30 +514,6 @@ function createPlaylist() {
   });
 }
 
-/* Aceita ?faixa=3, #faixa=3 ou ?track=3 (numeração começando em 1) */
-function getTrackFromURL() {
-  const q = new URLSearchParams(location.search);
-  const h = new URLSearchParams(location.hash.replace(/^#/, ''));
-  const raw = q.get('faixa') ?? h.get('faixa') ?? q.get('track');
-  const n = parseInt(raw, 10);
-  return (!isNaN(n) && n >= 1 && n <= playlist.length) ? n - 1 : 0;
-}
-
-/* Recebe a faixa da página do Wix (o iframe não enxerga a URL da página).
-   Aceita { faixaIndex: 2 } (começa em 0) ou { faixa: 3 } (começa em 1). */
-window.addEventListener('message', (e) => {
-  const d = e.data;
-  if (!d || typeof d !== 'object') return;
-  let i = null;
-  if (Number.isInteger(d.faixaIndex)) i = d.faixaIndex;
-  else if (Number.isInteger(d.faixa)) i = d.faixa - 1;
-  else if (typeof d.faixa === 'string' && /^\d+$/.test(d.faixa)) i = parseInt(d.faixa, 10) - 1;
-  if (i !== null && i >= 0 && i < playlist.length && i !== currentTrack) {
-    // sem autoplay: o navegador bloquearia e seria uma surpresa para o visitante
-    loadTrack(i, { autoplay: false, announce: false });
-  }
-});
-
 playBtn.addEventListener('click', () => {
   if (audio.paused) audio.play().catch(() => {});
   else audio.pause();
@@ -615,12 +572,9 @@ if ('mediaSession' in navigator) {
 
 createPlaylist();
 setSpeed(speedIndex);
-loadTrack(getTrackFromURL(), { autoplay: false, announce: false });
+/* sempre começa na faixa 1 (links e QR codes não escolhem faixa) */
+loadTrack(0, { autoplay: false, announce: false });
 
-/* Avisa a página do Wix que o player está pronto para receber a faixa */
-if (window.parent !== window) {
-  try { window.parent.postMessage({ type: 'player-pronto' }, '*'); } catch (e) {}
-}
 </script>
 </body>
 </html>
